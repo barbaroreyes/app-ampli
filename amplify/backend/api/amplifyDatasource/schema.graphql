@@ -1,0 +1,14 @@
+type Order @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  date: AWSDate
+  total: Float
+  username: String!
+}
+
+type OfertP @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  description: String
+  price: AWSDate
+  image: AWSURL
+}
